@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre id="hienthi" style="font-size: 20px;"></pre>
+    <script>
+        let hienthi = document.getElementById("hienthi")
+        let a = prompt("Nhập 1 số: ");
+        let check = 0, check1 = 1
+        hienthi.innerText +='0 1 '
+        for (var i = 2; i <= a; i++) {
+            let ketqua = check1 + check;
+            hienthi.innerText += ketqua + ' '
+            check = check1;
+            check1=ketqua;
+        }
+    </script>
+</body>
+
+</html>
